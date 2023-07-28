@@ -6,4 +6,3 @@ Created a shopping ecommerce website using mentioned technologies
 5) extra library packages
 
 
-This project was made for skill test of coding Ninjas.
