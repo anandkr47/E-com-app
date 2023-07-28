@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Base styles for the navbar */
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: rgb(203, 0, 90);
+  background: linear-gradient(
+    0deg,
+    rgba(253, 45, 140, 0.24413515406162467) 0%,
+    rgba(34, 143, 195, 1) 100%
+  );
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.nav_box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my_shop {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  font-family: cursive;
+  cursor: pointer;
+}
+
+.cart {
+  cursor: pointer;
+  margin-left: 40%;
+}
+
+.cart span:nth-child(1) {
+  font-size: 2rem;
+  color: white;
+}
+
+.cart span:nth-child(2) {
+  padding: 0 3px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  position: relative;
+  top: -15px;
+}
+
+/* Media query for screens 768px and below (mobile devices) */
+@media screen and (max-width: 768px) {
+  .nav_box {
+    width: 90%; /* Reduce the width for better mobile layout */
+  }
+
+  .my_shop {
+    font-size: 1rem; /* Adjust font size for mobile */
+  }
+
+  .cart {
+    margin-left: auto; /* Push the cart to the right on mobile */
+  }
+}
